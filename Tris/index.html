@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Static/Css/style.css">
+	<link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Rakkas&display=swap" rel="stylesheet">
+
+	<title>Gioco del Tris</title>
+</head>
+
+<body>
+	<div class="centro">
+
+	<h1>Gioco del Tris</h1>
+	
+
+<div class="descrizione">
+	<p>
+		Il tris viene giocato da due giocatori; uno di essi giocherà utilizzando le crocette, 
+		l’altro dei piccoli cerchi. Si gioca su una griglia di 3X3 caselle (9 caselle totali). 
+		Il giocatore di turno occupa una delle caselle con il suo simbolo, 
+		poi cede la mossa all’avversario. Vince il primo giocatore che riesce ad ottenere un “tris”, 
+		ovvero tre simboli adiacenti in riga, in colonna o lungo una delle diagonali. 
+		Se tutte e 9 le caselle vengono occupate senza che uno dei giocatori abbia ottenuto un tris, la partita termina con un pareggio.
+	</p>
+</div>
+
+	<div class="trisGrid">
+		<div class="row">
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="0" col-row="0"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="0" col-row="1"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="0" col-row="2"></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="1" col-row="0"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="1" col-row="1"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="1" col-row="2"></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="2" col-row="0"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="2" col-row="1"></a>
+			</div>
+			<div class="col">
+				<a href="#" class="gridBtn" data-row="2" col-row="2"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<button id="reset">Reset</button>
+		
+<script type="text/javascript" src="Static/Js/script.js"></script>
+	
+</body>
+</html>

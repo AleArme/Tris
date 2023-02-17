@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 553px;
+	height: 110px;
+	font-family: 'Judson';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 96px;
+	line-height: 110px;
+	text-align: center;
+	color: white;
+	mix-blend-mode: normal;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.centro{
+	
+	display: flex;
+	line-height: center;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+
+}
+
+.trisGrid{
+	
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.row{
+	
+	display: flex;
+}
+
+.col{
+	
+	width: 100px;
+	height: 100px;
+	background: white;
+	border: 1px solid black;
+
+}
+
+.gridBtn{
+	
+	display: block;	
+	width: 100%;
+	height: 100%;
+	background-color:white;
+}
+
+button{
+	
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: var(--orange);
+	color: white;
+	border-color: var(--orange);
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-left: 915px;
+	margin-top: 10px;
+
+}
+
+.player1, .player2{
+  position: relative;
+}
+
+.player1:before{
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.player1:after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: black;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.player2:before{
+  content: "";
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 2px solid black;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.descrizione p{
+	text-align: center;
+	width: 1086px;
+	height: 231px;
+	font-family: 'Fira Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 150%;
+	color: #373F51;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: white;
+}
+
+body{
+	background-image: url(../Images/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.h3 g1{
+	text-color: white;
+}
