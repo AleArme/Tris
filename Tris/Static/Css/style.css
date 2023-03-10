@@ -89,6 +89,7 @@ button{
   top: 50%;
   background-color: black;
   transform: translate(-50%,-50%) rotate(45deg);
+  background-color: #29335C;
 }
 
 .player1:after{
@@ -100,6 +101,7 @@ button{
   top: 50%;
   background-color: black;
   transform: translate(-50%,-50%) rotate(-45deg);
+  background-color: #29335C;
 }
 
 .player2:before{
@@ -112,6 +114,7 @@ button{
   border: 2px solid black;
   border-radius: 50%;
   transform: translate(-50%,-50%);
+  border-color: #2E6171;
 }
 
 .descrizione p{
@@ -136,6 +139,12 @@ body{
 	background-size: 100%;
 }
 
-.h3 g1{
-	text-color: white;
+.output{
+	color: skyblue;
+	text-align: center;
+	font-family: 'Fira Mono';
+	margin-top: 20px;
+	font-size: 25px;
+	font-style: normal;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

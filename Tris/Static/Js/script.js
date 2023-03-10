@@ -38,7 +38,7 @@ let links = document.querySelectorAll(".gridBtn"),
 		]
 
 
-		
+		let output = document.querySelector(".output")
 		let links = document.querySelectorAll(".gridBtn"),
 			currentPlayer = 1,
     		cellIsOccupied = true
@@ -53,7 +53,7 @@ let links = document.querySelectorAll(".gridBtn"),
 				if(cellIsOccupied === false){
 
 					console.log(e.currentTarget.dataset)
-		          e.currentTarget.classList.toggle("player"+currentPlayer)
+		          e.currentTarget.classList.toggle("player" + currentPlayer)
 
 		          let riga=e.currentTarget.dataset.row
 		          let colonna=e.currentTarget.dataset.col
@@ -67,9 +67,12 @@ let links = document.querySelectorAll(".gridBtn"),
 
 		          if(currentPlayer === 1){
 		            currentPlayer = 2
-		          }else{
+		            output.innerHTML = "Tocca al giocatore 2" 
+		          }else if(currentPlayer === 2){
 		            currentPlayer = 1
+		            output.innerHTML = "Tocca al giocatore 1"
 		          }
+		          console.log(currentPlayer)
 		        }
 			})
 
